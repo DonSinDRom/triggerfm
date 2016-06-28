@@ -1,0 +1,11 @@
+.channel {
+  color: #000;
+  position: relative;
+  background-color: #f4f4f3;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.channel__content {
+  flex: 1;
+}

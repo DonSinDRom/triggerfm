@@ -1,0 +1,94 @@
+.track {
+  border-bottom: 1px solid #eee;
+  background: #fdfdfd;
+}
+.track__row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 6px;
+  & + & {
+    padding: 0 6px 6px 6px;
+  }
+}
+
+.track__cover {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+}
+.track__cover_img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(170, 170, 170);
+  .track__cover____gold & {
+    border: 2px solid rgb(255, 205, 0);
+  }
+}
+.track__header {
+  display: inline-block;
+  padding: 6px;
+}
+.track__artist {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+}
+.track__title {
+  margin: 0;
+  font-size: 11px;
+}
+.track__tags {
+  display: flex;
+  overflow: hidden;
+  flex-flow: row wrap;
+}
+.track__tag {
+  font-size: 9px;
+  border-radius: 4px;
+  background-color: #888;
+  color: #fff;
+  padding: 2px 6px;
+  margin: 2px;
+  &:first-of-type {
+    margin: 2px 2px 2px 0;
+  }
+}
+.track__time {
+  padding: 6px 6px 6px 0;
+  flex: 1;
+  text-align: right;
+  font-size: 10px;
+  color: #aaa;
+}
+.track__votes {
+  padding: 6px 6px 6px 0;
+  color: #bbb;
+  min-width: 4rem;
+  text-align: right;
+}
+.track__votes____minus {
+  background-color: #f51e1e;
+}
+.track__votes____plus {
+  background-color: #2ff51e;
+}
+
+.track__votes_rating {
+  font-weight: 100;
+  font-size: 2rem;
+}
+.track__votes_divider {
+  font-size: 1rem;
+}
+.track__votes_count {
+  font-size: 1rem;
+}
+
+.track__uploader {
+  font-size: 10px;
+}
+.track__uploader_link {
+  color: #eba400;
+  font-weight: 100;
+}

@@ -1,0 +1,81 @@
+.track {
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  background: #fdfdfd;
+  /*
+    Changes:
+  */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #333;
+  color: #faf9f9;
+}
+.track__cover {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  padding: 6px;
+}
+.track__cover_img {
+  width: 48px;
+  height: 48px;
+}
+.track__header {
+  display: inline-block;
+  padding: 6px 6px 6px 0;
+}
+.track__artist {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+}
+.track__title {
+  margin: 0;
+  font-size: 11px;
+}
+.track__tags {
+  flex: 1;
+  padding: 6px 6px 6px 0;
+}
+.track__tag {
+  font-size: 9px;
+  border-radius: 4px;
+  background-color: #888;
+  color: #fff;
+  padding: 0 4px;
+}
+.track__times {
+  padding: 6px 6px 6px 0;
+
+}
+.track__time {
+
+}
+.track__votes {
+  padding: 6px 6px 6px 0;
+}
+.track__votes____minus {
+  background-color: #f51e1e;
+}
+.track__votes____plus {
+  background-color: #2ff51e;
+}
+
+
+.track__progress {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: #777;
+}
+.track__progress_bar {
+  height: 100%;
+  background: #ffcd00;
+}

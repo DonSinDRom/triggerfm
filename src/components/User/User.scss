@@ -1,0 +1,27 @@
+.user {
+  color: #aaa;
+  display: flex;
+  align-items: center;
+}
+.user____online {
+  color: #eba400;
+  & .user__icon {
+    background-color: #eba400;
+  }
+}
+.user__icon {
+  padding: 2px 6px;
+  background-color: #aaa;
+  color: #fff;
+  width: 1.1rem;
+  min-width: 1.1rem;
+  height: 1rem;
+  margin: 0 6px;
+  text-transform: none;
+  border-radius: 50%;
+  font-size: .5625rem;
+  text-align: center;
+}
+.user__name {
+
+}

@@ -1,0 +1,35 @@
+.aside {
+  height: 100%;
+  width: 200px;
+  background-color: #1c1c1f;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  color: #fff;
+}
+.aside__logo {
+  width: 100%;
+  padding: 10% 20%;
+}
+.aside__logo_img {
+  width: 100%;
+}
+
+.aside__stats {
+  padding: 10%;
+  list-style: none;
+  margin: 0;
+}
+.aside__stat {
+
+}
+.aside__stat_value {
+
+}
+
+.aside__upload {
+  background: #ffcd00;
+  color: #fff;
+  font-size: 40px;
+  border: none;
+}

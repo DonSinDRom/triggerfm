@@ -1,0 +1,121 @@
+.auth {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.auth__form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 22rem;
+  width: 100%;
+  min-width: 16rem;
+  background: rgba(0,0,0,.2);
+  padding: 3rem;
+  border-radius: 2px;
+  position: relative;
+
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &:after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    background-color: transparent;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0 rgba(0, 0, 0, 0.26);
+    z-index: -1;
+  }
+}
+.auth__form____active {
+  animation-name: shake;
+}
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+
+.auth__form____enter {
+  opacity: 0.01;
+  transition: opacity .75s ease-in;
+  &.auth__form____enterActive {
+    opacity: 1;
+  }
+}
+.auth__form____leave {
+  opacity: 1;
+  transition: opacity .75s ease-in;
+  &.auth__form____leaveActive {
+    opacity: 0.01;
+  }
+}
+.auth__form____appear {
+  opacity: 0.01;
+  transition: opacity .75s ease-in;
+  &.auth__form____appearActive {
+    opacity: 1;
+  }
+}
+
+.auth__input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  background-color: #484848;
+  color: #b1b1b1;
+  transition: background .4s ease-in;
+  &:focus {
+    outline: none;
+    background-color: #605f5f;
+  }
+}
+.auth__button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #47aca3;
+  border: none;
+  transition: background .4s ease-in;
+  &:focus {
+    outline: none;
+    background-color: #2abeb0;
+  }
+  &[disabled] {
+    background-color: #6c807e;
+  }
+}
+.auth__status {
+  color: red;
+}
+
+.auth__footer {
+  height: 60px;
+  background-color: rgba(33, 33, 33, 0.62);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #909090;
+}

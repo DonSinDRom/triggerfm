@@ -1,0 +1,86 @@
+.history {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  overflow: hidden;
+}
+.history__header {
+  background-color: #f2f2f2;
+  font-size: 13px;
+  padding: 12px;
+}
+
+.history__label {
+  margin: 0 6px;
+}
+.history__label_text {
+  position: relative;
+}
+.history__label_value {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+.history__artist {
+  margin: 0 6px;
+}
+.history__artist_input {
+  font-weight: 600;
+  padding: 2px 8px;
+}
+.history__title {
+  margin: 0 6px;
+}
+.history__title_input {
+  font-weight: normal;
+  padding: 2px 8px;
+}
+.history__button {
+  margin: 0 6px;
+  padding: 2px 8px;
+}
+
+.history_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  height: 100%;
+}
+.history__loader {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #84bd00;
+  text-align: center;
+  padding: 1rem;
+}
+.history__loader____enter {
+  opacity: 0.01;
+  transform: translateY(100%);
+  transition: transform .75s ease-in, opacity .75s ease-in;
+  &.history__loader____enterActive {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.history__loader____leave {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform .75s ease-in, opacity .75s ease-in;
+  &.history__loader____leaveActive {
+    transform: translateY(100%);
+    opacity: 0.01;
+  }
+}
+.history__loader____appear {
+  opacity: 0.01;
+  transform: translateY(100%);
+  transition: transform .75s ease-in, opacity .75s ease-in;
+  &.history__loader____appearActive {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
